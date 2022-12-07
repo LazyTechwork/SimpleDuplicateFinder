@@ -5,8 +5,8 @@ plugins {
     application
 }
 
-group = "ru.etu.deduplicator"
-version = "1.0-SNAPSHOT"
+group = "etu.ads.coursework"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
