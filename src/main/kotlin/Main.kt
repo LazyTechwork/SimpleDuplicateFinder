@@ -1,6 +1,5 @@
 import java.io.File
 import java.io.IOException
-import java.nio.file.Files
 
 fun main() {
     val hashes = HashMap<ULong, ArrayList<File>>()
