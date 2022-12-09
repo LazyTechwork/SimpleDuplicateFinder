@@ -16,7 +16,10 @@ fun main() {
         }
     }
 
-    hashes.filter { it.value.size > 1 }.forEach {
+    hashes.filter { it.value.size > 1 }.apply {
+        if (isEmpty())
+            println("Дубликатов не найдено")
+    }.forEach {
         println(
             "Найдено %d дубликат(-ов) для файла %s (хеш-сумма: %s):".format(
                 it.value.size - 1, it.value.first().toRelativeString(dir), it.key.toString()
